@@ -1,5 +1,6 @@
 library(ggplot2)
 library(rpart)
+library(randomForest)
 
 # STEP1. Read CSV data and summarize it to step1.txt
 seaflow <- read.csv(file="seaflow_21min.csv",head=TRUE,sep=",")
@@ -33,3 +34,9 @@ print(sum(accuracy)/length(accuracy))
 sink()
 
 # Step 6: Build and evaluate a random forest.
+sink("step6.txt")
+model2 <- randomForest(fol, method="class", data=train)
+pred <- predict(model2, test, type='class')
+accuracy <- pred == test$pop
+print(sum(accuracy)/length(accuracy))
+sink()
