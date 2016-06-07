@@ -24,3 +24,12 @@ fol <- formula(pop ~ fsc_small + fsc_perp + fsc_big + pe + chl_big + chl_small)
 model <- rpart(fol, method="class", data=train)
 print(model)
 sink()
+
+# Step 5: Evaluate the decision tree on the test data
+sink("step5.txt")
+pred <- predict(model, test, type='class')
+accuracy <- pred == test$pop
+print(sum(accuracy)/length(accuracy))
+sink()
+
+# Step 6: Build and evaluate a random forest.
