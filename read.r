@@ -40,6 +40,7 @@ model2 <- randomForest(fol, method="class", data=train)
 pred2 <- predict(model2, test, type='class')
 accuracy <- pred2 == test$pop
 print(sum(accuracy)/length(accuracy))
+print(importance(model2))
 sink()
 
 # Step 7: Train a support vector machine model and compare results
@@ -56,5 +57,8 @@ print(table(pred = pred, true = test$pop))
 print(table(pred = pred2, true = test$pop))
 print(table(pred = pred3, true = test$pop))
 sink()
+
+# Step 9: Sanity check the data
+
 
 

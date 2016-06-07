@@ -1,1 +1,8 @@
-[1] 0.9178455
+[1] 0.9230982
+          MeanDecreaseGini
+fsc_small        3819.0487
+fsc_perp         2825.9268
+fsc_big           276.2257
+pe              12586.2888
+chl_big          6650.8874
+chl_small       11437.2222

@@ -1,21 +1,21 @@
          true
 pred      crypto nano pico synecho ultra
   crypto       0    0    0       0     0
-  nano        33 3051    1      19   405
-  pico         0    0 5681       1  1361
-  synecho      0   11   29    5448    63
-  ultra        0  791  456       0  4353
+  nano        26 3011    1      22   423
+  pico         0    1 5610       3  1155
+  synecho      0   10   36    5419    70
+  ultra        0  805  604       0  4507
          true
 pred      crypto nano pico synecho ultra
-  crypto      33    1    0       1     0
-  nano         0 3353    0       0   210
-  pico         0    0 5965       0   869
-  synecho      0    3    5    5467     1
-  ultra        0  496  197       0  5102
+  crypto      26    1    0       0     0
+  nano         0 3333    0       3   178
+  pico         0    0 6050       0   787
+  synecho      0    1    6    5441     6
+  ultra        0  492  195       0  5184
          true
 pred      crypto nano pico synecho ultra
-  crypto      31    1    0       1     0
-  nano         1 3392    0       1   221
-  pico         0    0 5953      16   865
-  synecho      1    3   34    5448     2
-  ultra        0  457  180       2  5094
+  crypto      23    0    0       0     0
+  nano         0 3361    0       2   218
+  pico         0    0 6025       9   781
+  synecho      3    4   42    5432     4
+  ultra        0  462  184       1  5152
