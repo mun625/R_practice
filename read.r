@@ -37,16 +37,24 @@ sink()
 # Step 6: Build and evaluate a random forest
 sink("step6.txt")
 model2 <- randomForest(fol, method="class", data=train)
-pred <- predict(model2, test, type='class')
-accuracy <- pred == test$pop
+pred2 <- predict(model2, test, type='class')
+accuracy <- pred2 == test$pop
 print(sum(accuracy)/length(accuracy))
 sink()
 
-# Step 7: Train a support vector machine model and compare results.
+# Step 7: Train a support vector machine model and compare results
 sink("step7.txt")
 model3 <- svm(fol, method="class", data=train)
-pred <- predict(model3, test, type='class')
-accuracy <- pred == test$pop
+pred3 <- predict(model3, test, type='class')
+accuracy <- pred3 == test$pop
 print(sum(accuracy)/length(accuracy))
 sink()
+
+# Step 8: Construct confusion matrices
+sink("step8.txt")
+print(table(pred = pred, true = test$pop))
+print(table(pred = pred2, true = test$pop))
+print(table(pred = pred3, true = test$pop))
+sink()
+
 
